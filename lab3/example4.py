@@ -10,4 +10,4 @@ if age > 0:
 	else:
 		print(normalPrice)
 else:
-	print("You can not be younger than 0 year!")				
+	print("You can not be younger than 0 years!")				
