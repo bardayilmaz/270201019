@@ -1,5 +1,6 @@
 grades = list()
-avGrades=list()
+avGrades = list()
+AAGrades = list()
 studentCount = int(input("how many students will enter the grades? "))
 for i in range(studentCount):
 	m_1 = int(input("midterm1: "))
@@ -8,4 +9,9 @@ for i in range(studentCount):
 
 	grades.append([m_1,m_2,f])
 	avGrades.append(m_1*0.3+m_2*0.3+f*0.4)
-print(grades,"\n",avGrades)		
+
+## "Finding AA Students" example
+for grade in avGrades:
+	if grade >= 90:
+		AAGrades.append(grade)	
+print(grades,"\n",avGrades, "\n", AAGrades)
