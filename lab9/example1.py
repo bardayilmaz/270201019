@@ -3,4 +3,4 @@ def harmonic(n):
 		return 0 
 	else:
 		return 1/n + harmonic(n-1)
-print(harmonic(3))
+print(harmonic(5))
