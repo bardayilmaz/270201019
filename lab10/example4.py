@@ -1,8 +1,8 @@
-def fibonacciLastLine(lineNo, currentLine = 1, line= list(), allLines = list()):
+def fibonacci(lineNo, currentLine = 1, line= list(), allLines = list()):
 	if currentLine == 1:
 		line = [1]
 		allLines.append(line)
-		return fibonacciLastLine(lineNo, currentLine+1, line)
+		return fibonacci(lineNo, currentLine+1, line)
 
 	elif currentLine == lineNo+1:
 			return allLines
@@ -18,9 +18,9 @@ def fibonacciLastLine(lineNo, currentLine = 1, line= list(), allLines = list()):
 				newLine[i] += line[i]+line[i-1]
 		newLine[-1] = 1
 		allLines.append(newLine)
-		return fibonacciLastLine(lineNo, currentLine+1, newLine)
+		return fibonacci(lineNo, currentLine+1, newLine)
 
 		
 
-print(fibonacciLastLine(5))				
+print(fibonacci(5))				
 
