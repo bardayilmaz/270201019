@@ -5,5 +5,11 @@ def recursiveMultiplication(n, count = 0, n_ = 0):
 		print(n)
 	else:
 		return recursiveMultiplication(n+n_, count+1, n_)
+def func2(n):
+	if n == 1:
+		return 3
+	else:
+		return n * func2(1)			
 
-recursiveMultiplication(5)			
+recursiveMultiplication(6)		
+print(func2(5))	
