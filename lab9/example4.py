@@ -8,5 +8,5 @@ def timer(t):
 		if t != 0:
 			print(str(t)+"...")
 		timer(t-1)
-timer(5)
+timer(6)
 		
