@@ -9,7 +9,7 @@ def func2(n):
 	if n == 1:
 		return 3
 	else:
-		return n * func2(1)			
+		return 3 + func2(n-1)			
 
 recursiveMultiplication(6)		
 print(func2(5))	
