@@ -1,5 +1,6 @@
-def binarySearch(element, nums):
+def binarySearch(element, nums, step = 0):
 	if len(nums) == 0:
+		print("could not find. step count:",step)
 		return -1
 
 	mid = len(nums) // 2
@@ -8,11 +9,12 @@ def binarySearch(element, nums):
 	if item == element:
 		return mid
 	elif element < item:
-		return binarySearch(element, nums[:mid])
+		return binarySearch(element, nums[:mid], step+1)
 	else:
-		loc = binarySearch(element, nums[mid+1:])
+		loc = binarySearch(element, nums[mid+1:], step+1)
 		if loc == -1:
 			return -1
+		print("step:", step)	
 		return loc + mid +1				
 
   
